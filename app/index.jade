@@ -1,6 +1,21 @@
 doctype html
 html
   head
-    title Dashboard
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Dashboard con Google Charts
+    script(type="text/javascript" src="https://www.gstatic.com/charts/loader.js")
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css")
   body
-    h1 Hola Mundo!!
+    .container
+      .row
+        .jumbotron.text-center
+          h1 Tablero de Control Población
+          h2 Utiliza los controles para filtrar los resultados de la gráfica
+      div(id="dashboard_div" class="text-center")
+        div(id="filtro_div")
+        div(id="filtro_mun_div")
+        .row
+          .col-xs-12.col-md-offset-3
+            div(id="grafica_div")
+    script(type="text/javascript", src="js/app.js")
